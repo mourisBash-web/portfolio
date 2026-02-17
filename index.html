@@ -289,7 +289,7 @@ animation:bounce 2s infinite;
 <div class="slash">/</div>
 
 <h1>
-hello.<br>
+ hello.<br>
 my name is<br>
 mouris bashir.<br>
 i'm a communication<br>
@@ -316,6 +316,13 @@ bio
 </section>
 
 <script>
+  function scrollToNext(){
+window.scrollTo({
+top:window.innerHeight,
+behavior:'smooth'
+});
+}
+
 const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(entries => {
@@ -350,29 +357,5 @@ bg.style.transform = "translateY(" + (scrolled * 0.35) + "px)";
 
 </body>
 </html>
-<section class="section" style="background:#000000; flex-direction:column; text-align:center;">
 
-<h1 class="reveal">The Problem</h1>
-
-<p class="reveal" style="max-width:700px; font-size:24px; line-height:1.7;">
-I sweat the petty things; pet the sweaty things, and everything in between. 
-  I raise the teams I work with, and in turn, they make me look better than I am. 
-  I’ve worked for almost a decade creating content across categories and brands. 
-  Now, though, I’m a marketer, creating treats for y’all. 
-</p>
-
-</section>
-
-
-<section class="section" style="background:#000000; flex-direction:column; text-align:center;">
-
-<h1 class="reveal">The Insight</h1>
-
-<p class="reveal" style="max-width:700px; font-size:24px; line-height:1.7;">
-I bake Croissants and Muffins on occasion, Ski when I'm near snow, ride a bike 
-  when in the mountains, and play cricket when I get a chance. Movies over books.
-  Books over movies. Air over air conditioning. Gin over beer. 
-</p>
-
-</section>
 
