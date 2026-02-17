@@ -81,18 +81,27 @@ animation:bounce 2s infinite;
 
 .menu{
 position:fixed;
-top:30px;
-right:30px;
-width:50px;
-height:50px;
+top:28px;
+right:28px;
+width:54px;
+height:54px;
 border-radius:50%;
-background:#f5f5f5;
+background:#000;
+color:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
 cursor:pointer;
-z-index:999;
+z-index:1100;
+font-size:22px;
+box-shadow:0 8px 25px rgba(0,0,0,0.35);
+transition:0.25s;
 }
+
+.menu:hover{
+background:#ff0066;
+}
+
 
 .menu:hover{
 background:#f5f5f5;
