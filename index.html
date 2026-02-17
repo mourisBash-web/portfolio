@@ -318,6 +318,7 @@ animation:bounce 2s infinite;
 </head>
 
 <body>
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
 <div class="menu" onclick="toggleMenu()">≡</div>
 
@@ -413,7 +414,9 @@ behavior:'smooth'
 
 function toggleMenu(){
 document.getElementById("panel").classList.toggle("open");
+document.getElementById("overlay").classList.toggle("show");
 }
+
 window.addEventListener("scroll", function(){
 let scrolled = window.pageYOffset;
 let bg = document.getElementById("bg1");
