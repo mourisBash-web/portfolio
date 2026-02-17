@@ -333,6 +333,12 @@ bio
 </section>
 
 <script>
+ document.querySelectorAll('.panel a').forEach(link=>{
+link.addEventListener('click',()=>{
+document.getElementById("panel").classList.remove("open");
+});
+});
+
  function scrollToNextSection(el){
 let next = el.parentElement.nextElementSibling;
 if(next){
