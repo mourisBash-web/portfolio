@@ -161,6 +161,7 @@ backdrop-filter:blur(6px);
 <p class="reveal" style="max-width:600px; font-size:22px; line-height:1.6;">
 I work at the intersection of trust, media, and public perception.
 </p>
+<div class="arrow-light" onclick="scrollToNextSection(this)">⌄</div>
 
 </section>
 /* TYPE HERO */
@@ -316,6 +317,13 @@ bio
 </section>
 
 <script>
+ function scrollToNextSection(el){
+let next = el.parentElement.nextElementSibling;
+if(next){
+next.scrollIntoView({behavior:'smooth'});
+}
+}
+
   function scrollToNext(){
 window.scrollTo({
 top:window.innerHeight,
