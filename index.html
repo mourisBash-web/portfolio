@@ -7,6 +7,25 @@
 
 <style>
 
+ .overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+z-index:900;
+}
+
+.overlay.show{
+opacity:1;
+pointer-events:auto;
+}
+
+
 body{
 margin:0;
 font-family:'Poppins', sans-serif;
@@ -312,7 +331,7 @@ animation:bounce 2s infinite;
 <a href="#about">home</a>
 
 <a href="https://www.mouris-bashir.work/work" target="_blank">
-Work
+work
 </a>
 
 <a href="https://www.mouris-bashir.work/musings" target="_blank">
